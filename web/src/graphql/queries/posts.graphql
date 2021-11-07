@@ -1,0 +1,15 @@
+query Posts {
+  browseByCarMake {
+    id
+    carMake
+    carModel
+    imageUrl
+    carYear
+    trips
+    points
+    destination {
+      id
+      destinationName
+    }
+  }
+}

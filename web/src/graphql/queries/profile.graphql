@@ -1,0 +1,23 @@
+query Profile {
+  me {
+    ...RegularUser
+    bookings {
+      id
+      carId
+      fromDate
+      toDate
+      ratingStatus
+      bookingStatus
+      comment {
+        commentText
+        id
+      }
+    }
+    posts {
+      id
+      carMake
+      carModel
+      carYear
+    }
+  }
+}
